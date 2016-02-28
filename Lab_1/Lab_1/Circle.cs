@@ -3,20 +3,14 @@
 namespace Lab_1
 {
 
-    public class Circle : Figure
+    public class Circle : Ellipse
     {
-        private int x, y, w;
-
+   
         public Circle(int x, int y, int w)
+            :base (x, y, w, w)
         {
-            this.x = x;
-            this.y = y;
-            this.w = w;
+
         }
 
-        public override void draw(Graphics g, Pen myPen)
-        {
-            g.DrawEllipse(myPen, x, y, w, w);
-        }
     }
 }

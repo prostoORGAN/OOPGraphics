@@ -2,20 +2,14 @@
 
 namespace Lab_1
 {
-    public class Square : Figure
+    public class Square : Rectangle
     {
-        private int x, y, w;
 
         public Square(int x, int y, int w)
+            :base (x, y, w, w)
         {
-            this.x = x;
-            this.y = y;
-            this.w = w;
+
         }
 
-        public override void draw(Graphics g, Pen myPen)
-        {
-            g.DrawRectangle(myPen, x, y, w, w);
-        }
     }
 }
